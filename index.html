@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Sports Countdown Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="timer-container">
+    <h1>Sports Countdown Timer</h1>
+    <div id="timer-display">00:00:00</div>
+    <div class="input-container">
+      <input type="number" id="hours-input" placeholder="HH" min="0">
+      <input type="number" id="minutes-input" placeholder="MM" min="0" max="59">
+      <input type="number" id="seconds-input" placeholder="SS" min="0" max="59">
+    </div>
+    <div class="button-container">
+      <button onclick="startTimer()">Start</button>
+      <button onclick="pauseTimer()">Pause</button>
+      <button onclick="resetTimer()">Reset</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
